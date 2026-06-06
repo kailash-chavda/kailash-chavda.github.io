@@ -511,6 +511,48 @@ header.scrolled {
   margin: 0 auto;
 }
 
+.availability-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent-teal);
+  background: rgba(13, 255, 201, 0.06);
+  border: 1px solid rgba(13, 255, 201, 0.15);
+  padding: 6px 14px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+body.light-theme .availability-tag {
+  color: #008767;
+  background: rgba(0, 135, 103, 0.05);
+  border-color: rgba(0, 135, 103, 0.15);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-teal);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--accent-teal);
+  animation: pulseAvailability 2s infinite;
+}
+
+body.light-theme .pulse-dot {
+  background-color: #008767;
+  box-shadow: 0 0 8px #008767;
+}
+
+@keyframes pulseAvailability {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.5; }
+}
+
 .hero-subtitle {
   font-size: 15px;
   font-weight: 700;
@@ -547,6 +589,141 @@ header.scrolled {
   justify-content: center;
   gap: 16px;
   margin-bottom: 60px;
+}
+
+/* Dashboard Status Panel Overlay */
+.dashboard-status-overlay {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  width: 240px;
+  background: rgba(13, 17, 27, 0.95);
+  border: 1px solid rgba(10, 92, 255, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), var(--glass-shadow);
+  z-index: 100;
+  pointer-events: auto;
+  font-family: var(--font-heading);
+  text-align: left;
+  animation: floatOverlay 6s ease-in-out infinite;
+  transition: var(--transition-slow);
+}
+
+body.light-theme .dashboard-status-overlay {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(10, 92, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), var(--glass-shadow);
+}
+
+.overlay-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 8px;
+}
+
+.status-indicator-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-teal);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--accent-teal);
+  animation: pulseStatus 2s infinite;
+}
+
+body.light-theme .status-indicator-dot {
+  background-color: #008767;
+  box-shadow: 0 0 8px #008767;
+}
+
+@keyframes pulseStatus {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.25); }
+}
+
+.overlay-header h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.environment-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.environment-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.5px;
+  color: var(--text-primary);
+}
+
+.env-lang {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.env-lang i {
+  font-size: 13.5px;
+  width: 16px;
+  text-align: center;
+}
+
+.env-lang i.fa-flutter { color: #0DFFC9; }
+.env-lang i.fa-android { color: #0A5CFF; }
+.env-lang i.fa-apple { color: var(--text-white); }
+.env-lang i.fa-laravel { color: #FF2D20; }
+.env-lang i.fa-node-js { color: #83B404; }
+
+body.light-theme .env-lang i.fa-flutter { color: #008767; }
+body.light-theme .env-lang i.fa-android { color: #0050E6; }
+body.light-theme .env-lang i.fa-apple { color: #0F172A; }
+
+.env-ver {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.overlay-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--text-dark);
+  border-top: 1px solid var(--glass-border);
+  padding-top: 8px;
+  font-family: var(--font-mono);
+}
+
+@keyframes floatOverlay {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive Overrides for Status Panel */
+@media (max-width: 1200px) {
+  .dashboard-status-overlay {
+    right: 15px;
+    top: -30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-status-overlay {
+    display: none; /* Hide on smaller tablet & mobile */
+  }
 }
 
 /* --- INTERACTIVE DASHBOARD PREVIEW --- */
