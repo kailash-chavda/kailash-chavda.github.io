@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Kailash Chavda | Senior Mobile & Full-Stack Web Developer. 10+ years of experience building high-performance native, cross-platform apps, and scalable web systems.">
+  <title>iDeveloper✦ | Portfolio V4</title>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Background Glowing Elements -->
+  <div class="ambient-glows">
+    <div class="glow-shape-1"></div>
+    <div class="glow-shape-2"></div>
+  </div>
+
+  <!-- Mobile Collapsed Header -->
+  <div class="mobile-top-header">
+    <a href="#hero" class="logo" style="margin-bottom: 0; font-size: 20px;">
+      <i class="fa-solid fa-square-poll-vertical"></i> iDev<span>✦</span>
+    </a>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle theme" style="width: 36px; height: 36px; font-size: 14px;">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" style="background: transparent; border: none; color: var(--text-white); font-size: 20px; cursor: pointer;">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- WORKSPACE CONTAINER (Left Sidebar + Main Frame) -->
+  <div class="app-container">
+
+    <!-- Left Sticky Navigation Sidebar -->
+    <aside class="app-sidebar" id="app-sidebar">
+      <div>
+        <div class="sidebar-logo">
+          <i class="fa-solid fa-square-poll-vertical"></i> iDeveloper<span>✦</span>
+        </div>
+        <ul class="sidebar-menu">
+          <li><a href="#hero" class="menu-item active"><i class="fa-solid fa-gauge-high"></i> Dashboard <span class="menu-dot"></span></a></li>
+          <li><a href="#services" class="menu-item"><i class="fa-solid fa-magnifying-glass-chart"></i> Services <span class="menu-dot"></span></a></li>
+          <li><a href="#expertise" class="menu-item"><i class="fa-solid fa-cubes"></i> Tech Stack <span class="menu-dot"></span></a></li>
+          <li><a href="#projects" class="menu-item"><i class="fa-solid fa-folder-open"></i> Projects <span class="menu-dot"></span></a></li>
+          <li><a href="#consultation" class="menu-item"><i class="fa-solid fa-calendar-check"></i> Book Call <span class="menu-dot"></span></a></li>
+          <li><a href="#contact" class="menu-item"><i class="fa-solid fa-envelope"></i> Contact <span class="menu-dot"></span></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-footer-card">
+        <h5><i class="fa-solid fa-shield-halved"></i> iDeveloper Pro</h5>
+        <p>Smart cleaning, safe code refactoring, and mobile/web operations optimization tools.</p>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" style="margin-top: 6px; width: 100%;">
+          <i class="fa-solid fa-moon"></i> Switch Theme
+        </button>
+      </div>
+    </aside>
+
+    <!-- Right Workspace Dashboard Panel -->
+    <main class="main-workspace">
+
+      <!-- Top System Status Banner -->
+      <header class="workspace-header">
+        <div>
+          <h2 style="font-size: 24px; color: var(--text-white);">Kailash Chavda</h2>
+          <p style="font-size: 13px; color: var(--text-muted);">Senior Mobile &amp; Full-Stack Architect</p>
+        </div>
+        <div class="system-status">
+          <span class="status-dot"></span> Developer Status: Active
+        </div>
+      </header>
+
+      <!-- HERO SECTION (Cleaner Card Widget) -->
+      <section id="hero" class="hero-cleaner-card">
+        <div>
+          <span class="tag">Smart Architecture System</span>
+          <h1>Build clean, high-performance apps with one click.</h1>
+          <p>
+            Optimize legacy codebases, refactor technical debt, and deploy natively compiled cross-platform apps with 10+ years of technical leadership.
+          </p>
+          <div class="ctas">
+            <a href="#consultation" class="btn btn-primary">Book Consultation <i class="fa-solid fa-calendar"></i></a>
+            <a href="../Documents/Resume - Mobile Application Developer - Kailash Chavda.pdf" target="_blank" class="btn btn-secondary">Download Resume <i class="fa-solid fa-download"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-dial-wrapper">
+          <!-- Animated Circle Progress Dial -->
+          <div class="circle-loader" data-percentage="95">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <path class="circle" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <div class="percentage">95%<span>System Health</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- METRICS ANALYTICS SECTION -->
+      <section class="metrics-grid">
+        <!-- Metric 1: Clean Code Index -->
+        <div class="metric-card">
+          <div class="metric-header">
+            <div class="metric-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="circle-loader metric-loader" data-percentage="95">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <path class="circle" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              </svg>
+              <div class="percentage">95%</div>
+            </div>
+          </div>
+          <div>
+            <div class="metric-value">4.2M+</div>
+            <div class="metric-label">Clean Code Index</div>
+            <p class="metric-desc">Adhering to OOP, SOLID principles, MVVM, and strict state management.</p>
+          </div>
+        </div>
+
+        <!-- Metric 2: Legacy Code Refactoring -->
+        <div class="metric-card blue">
+          <div class="metric-header">
+            <div class="metric-icon"><i class="fa-solid fa-broom"></i></div>
+            <div class="circle-loader metric-loader" data-percentage="72">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <path class="circle" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              </svg>
+              <div class="percentage">72%</div>
+            </div>
+          </div>
+          <div>
+            <div class="metric-value">100k+</div>
+            <div class="metric-label">Debt Cleaned</div>
+            <p class="metric-desc">Migrating legacy native codebases to modern Kotlin, Swift, and Flutter layers.</p>
+          </div>
+        </div>
+
+        <!-- Metric 3: DRY Component Index -->
+        <div class="metric-card">
+          <div class="metric-header">
+            <div class="metric-icon"><i class="fa-solid fa-copy"></i></div>
+            <div class="circle-loader metric-loader" data-percentage="58">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <path class="circle" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              </svg>
+              <div class="percentage">58%</div>
+            </div>
+          </div>
+          <div>
+            <div class="metric-value">50+</div>
+            <div class="metric-label">Shared Modules</div>
+            <p class="metric-desc">Developing reusable UI custom widgets and cross-platform shared systems.</p>
+          </div>
+        </div>
+
+        <!-- Metric 4: App Performance optimization -->
+        <div class="metric-card blue">
+          <div class="metric-header">
+            <div class="metric-icon"><i class="fa-solid fa-gauge"></i></div>
+            <div class="circle-loader metric-loader" data-percentage="81">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <path class="circle" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              </svg>
+              <div class="percentage">81%</div>
+            </div>
+          </div>
+          <div>
+            <div class="metric-value">40% Boost</div>
+            <div class="metric-label">Performance Tuning</div>
+            <p class="metric-desc">Profiling memory leaks, optimizing load times, and resolving frame drops.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES (Quick Scan Modules) -->
+      <section id="services" class="section">
+        <div class="section-header">
+          <span class="section-tagline">My Offerings</span>
+          <h2 class="section-title">Developer Scan Modules</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- Module 1 -->
+          <div class="glass-card service-card">
+            <div class="service-card-header">
+              <div class="service-icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h3>Mobile App Workplace</h3>
+            </div>
+            <p>
+              Expert-level development for iOS and Android. Crafting fluid native screens with Kotlin and Jetpack Compose, native iOS apps, and hybrid cross-platform apps using Flutter and React Native from a single high-performance codebase.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-square-check"></i> Flutter &amp; Dart Specialization</li>
+              <li><i class="fa-solid fa-square-check"></i> Native Android (Kotlin &amp; Compose)</li>
+              <li><i class="fa-solid fa-square-check"></i> Native iOS (Swift &amp; SwiftUI)</li>
+            </ul>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="glass-card service-card blue">
+            <div class="service-card-header">
+              <div class="service-icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Full-Stack Web Workplace</h3>
+            </div>
+            <p>
+              Architecting robust web applications and backend systems. Setting up responsive frontend user interfaces alongside secure API architectures using Laravel (PHP), Node.js, and Livewire microservices.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-square-check"></i> Next.js / React Frontend UI</li>
+              <li><i class="fa-solid fa-square-check"></i> Laravel, Livewire &amp; Node.js Backend</li>
+              <li><i class="fa-solid fa-square-check"></i> RESTful API Design &amp; Integration</li>
+            </ul>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="glass-card service-card">
+            <div class="service-card-header">
+              <div class="service-icon-box"><i class="fa-solid fa-palette"></i></div>
+              <h3>UI/UX &amp; Design Canvas</h3>
+            </div>
+            <p>
+              Designing beautiful, intuitive user journeys and modern digital layouts. Translating user requirements into engaging user experiences, building rapid wireframes, and ensuring visual hierarchy, and accessibility.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-square-check"></i> Interactive High-Fidelity Mockups</li>
+              <li><i class="fa-solid fa-square-check"></i> Responsive Web &amp; App Layouts</li>
+              <li><i class="fa-solid fa-square-check"></i> Glassmorphic &amp; Neo-Brutalism Designs</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK (App Manager) -->
+      <section id="expertise" class="section">
+        <div class="section-header">
+          <span class="section-tagline">Tech Stack</span>
+          <h2 class="section-title">Core Expertise</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <!-- Box 1 -->
+          <div class="glass-card expertise-box">
+            <h3><i class="fa-solid fa-mobile-screen"></i> Mobile Development</h3>
+            <div class="skill-list">
+              <div class="skill-tag"><i class="fa-brands fa-flutter"></i> Flutter</div>
+              <div class="skill-tag"><i class="fa-solid fa-code"></i> Dart</div>
+              <div class="skill-tag"><i class="fa-brands fa-android"></i> Android SDK</div>
+              <div class="skill-tag"><i class="fa-solid fa-code"></i> Kotlin</div>
+              <div class="skill-tag"><i class="fa-brands fa-apple"></i> iOS (Swift/SwiftUI)</div>
+              <div class="skill-tag"><i class="fa-solid fa-layer-group"></i> Jetpack Compose</div>
+              <div class="skill-tag"><i class="fa-solid fa-gears"></i> BLoC / Provider / GetX</div>
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="glass-card expertise-box">
+            <h3><i class="fa-solid fa-server"></i> Web &amp; Backend</h3>
+            <div class="skill-list">
+              <div class="skill-tag"><i class="fa-brands fa-laravel"></i> Laravel</div>
+              <div class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</div>
+              <div class="skill-tag"><i class="fa-solid fa-bolt"></i> Livewire</div>
+              <div class="skill-tag"><i class="fa-brands fa-react"></i> React / Next.js</div>
+              <div class="skill-tag"><i class="fa-brands fa-square-js"></i> JavaScript (ES6+)</div>
+              <div class="skill-tag"><i class="fa-brands fa-css3-alt"></i> Tailwind CSS</div>
+              <div class="skill-tag"><i class="fa-solid fa-link"></i> RESTful APIs</div>
+            </div>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="glass-card expertise-box">
+            <h3><i class="fa-solid fa-database"></i> Databases &amp; Caching</h3>
+            <div class="skill-list">
+              <div class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL</div>
+              <div class="skill-tag"><i class="fa-solid fa-database"></i> MongoDB</div>
+              <div class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</div>
+              <div class="skill-tag"><i class="fa-solid fa-cloud"></i> AWS RDS</div>
+              <div class="skill-tag"><i class="fa-solid fa-memory"></i> Redis (Caching)</div>
+              <div class="skill-tag"><i class="fa-solid fa-box-archive"></i> Hive / RoomDB</div>
+            </div>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="glass-card expertise-box">
+            <h3><i class="fa-solid fa-toolbox"></i> DevOps &amp; Tools</h3>
+            <div class="skill-list">
+              <div class="skill-tag"><i class="fa-brands fa-aws"></i> AWS (EC2/S3)</div>
+              <div class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</div>
+              <div class="skill-tag"><i class="fa-solid fa-circle-nodes"></i> CI/CD Pipelines</div>
+              <div class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git / GitHub</div>
+              <div class="skill-tag"><i class="fa-solid fa-circle-check"></i> Postman</div>
+              <div class="skill-tag"><i class="fa-brands fa-jira"></i> JIRA / Agile</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED PROJECTS (Junk Cleaner List) -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <span class="section-tagline">My Works</span>
+          <h2 class="section-title">Scanned Projects</h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <ul class="project-filters">
+          <li><button class="filter-btn active" data-filter="all">All Projects</button></li>
+          <li><button class="filter-btn" data-filter="mobile">Mobile Apps</button></li>
+          <li><button class="filter-btn" data-filter="web">Web Systems</button></li>
+        </ul>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1 (Mobile) -->
+          <div class="glass-card project-card show" data-category="mobile">
+            <div class="project-meta">
+              <span class="project-category">Flutter App</span>
+              <div class="project-links">
+                <a href="https://play.google.com/store/apps/details?id=com.ta.news&hl=en_IN" target="_blank"
+                  class="project-link-btn" title="Android Link"><i class="fa-brands fa-android"></i></a>
+                <a href="https://apps.apple.com/us/app/piplana-pane/id1409110407" target="_blank" class="project-link-btn"
+                  title="iOS Link"><i class="fa-brands fa-apple"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Piplana Pane</h3>
+            <p class="project-desc">
+              The ultimate classified platform for the agricultural community. It connects farmers and traders to buy and
+              sell tractors, livestock, farm implements, irrigation systems, and agricultural machinery across Gujarat and
+              Maharashtra.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Project 2 (Mobile) -->
+          <div class="glass-card project-card show" data-category="mobile">
+            <div class="project-meta">
+              <span class="project-category">Native App</span>
+              <div class="project-links">
+                <a href="https://play.google.com/store/apps/details?id=com.ofcourse.kuwait" target="_blank"
+                  class="project-link-btn" title="Android Link"><i class="fa-brands fa-android"></i></a>
+                <a href="https://apps.apple.com/kw/app/ofcourse-kw/id6470784883" target="_blank" class="project-link-btn"
+                  title="iOS Link"><i class="fa-brands fa-apple"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Ofcourse KW</h3>
+            <p class="project-desc">
+              A subscription-based diet plan app delivering healthy, calorie-tracked meal packages. Users can
+              custom-tailor monthly subscription dishes to hit exact daily calorie goals and nutrients.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Kotlin</span>
+              <span class="tech-badge">Swift</span>
+              <span class="tech-badge">Jetpack Compose</span>
+              <span class="tech-badge">CoreData</span>
+            </div>
+          </div>
+
+          <!-- Project 3 (Web) -->
+          <div class="glass-card project-card show" data-category="web">
+            <div class="project-meta">
+              <span class="project-category">Web Platform</span>
+              <div class="project-links">
+                <a href="https://vehicleand.com/ar" target="_blank" class="project-link-btn" title="Live Site"><i
+                    class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Vehicleand</h3>
+            <p class="project-desc">
+              A comprehensive B2B and B2C online marketplace for buying and selling new, used, and certified vehicles
+              (cars, trucks, bikes). Features advanced filters, messaging, dealer listings, and user inventories.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Project 4 (Mobile) -->
+          <div class="glass-card project-card show" data-category="mobile">
+            <div class="project-meta">
+              <span class="project-category">Native App</span>
+              <div class="project-links">
+                <a href="https://play.google.com/store/apps/details?id=com.dcas.app" target="_blank"
+                  class="project-link-btn" title="Android Link"><i class="fa-brands fa-android"></i></a>
+                <a href="https://apps.apple.com/us/app/dubai-ambulance-%D8%A5%D8%B3%D8%B9%D8%A7%D9%81-%D8%AF%D8%A8%D9%8A/id1165959800"
+                  target="_blank" class="project-link-btn" title="iOS Link"><i class="fa-brands fa-apple"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Dubai Ambulance</h3>
+            <p class="project-desc">
+              A critical emergency request app designed for requesting medical aid in Dubai. Includes robust accessibility
+              interfaces for visual/hearing impaired users to communicate immediately with dispatchers.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Kotlin</span>
+              <span class="tech-badge">SwiftUI</span>
+              <span class="tech-badge">Google Maps API</span>
+              <span class="tech-badge">Push Notifications</span>
+            </div>
+          </div>
+
+          <!-- Project 5 (Web) -->
+          <div class="glass-card project-card show" data-category="web">
+            <div class="project-meta">
+              <span class="project-category">E-commerce Portal</span>
+              <div class="project-links">
+                <a href="https://balajiwholesalefoods.com/" target="_blank" class="project-link-btn" title="Live Site"><i
+                    class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Balaji Wholesale Foods</h3>
+            <p class="project-desc">
+              B2B importer and wholesaler system importing ethnic Indian foods into the US. Features catalog management,
+              bulk invoicing, online distribution tracking, and vendor accounts.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">AWS EC2</span>
+            </div>
+          </div>
+
+          <!-- Project 6 (Mobile) -->
+          <div class="glass-card project-card show" data-category="mobile">
+            <div class="project-meta">
+              <span class="project-category">Flutter App</span>
+              <div class="project-links">
+                <a href="https://play.google.com/store/apps/details?id=com.appix.garey" target="_blank"
+                  class="project-link-btn" title="Android Link"><i class="fa-brands fa-android"></i></a>
+                <a href="https://apps.apple.com/in/app/garey-qatars-shopping-app/id1495042185" target="_blank"
+                  class="project-link-btn" title="iOS Link"><i class="fa-brands fa-apple"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Garey</h3>
+            <p class="project-desc">
+              Qatar's premium e-commerce platform offering top deals on consumer electronics, beauty, health, and outdoor
+              equipment. Engineered for ultra-fast checkout loops and high-volume orders.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
+              <span class="tech-badge">Stripe Integration</span>
+              <span class="tech-badge">Hive DB</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONSULTATION PLANS GRID -->
+      <section id="consultation" class="section">
+        <div class="section-header">
+          <span class="section-tagline">Book a Sync</span>
+          <h2 class="section-title">Developer Consultation Plans</h2>
+          <p class="section-desc">
+            Choose a workplace consultation plan below to align on your project. No third-party accounts, 100% secure.
+          </p>
+        </div>
+
+        <!-- Plans Grid -->
+        <div class="plans-grid">
+          <!-- Plan 1 -->
+          <div class="plan-card">
+            <div class="plan-name">Discovery Call</div>
+            <div class="plan-price">Free<span>/ 15 Mins</span></div>
+            <div class="plan-desc">A quick introductory call to discuss high-level project goals and timelines.</div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-circle-check"></i> High-level scope outline</li>
+              <li><i class="fa-solid fa-circle-check"></i> Tech stack recommendations</li>
+              <li><i class="fa-solid fa-circle-check"></i> Google Meet invitation</li>
+              <li class="unavailable"><i class="fa-solid fa-circle-xmark"></i> Detailed architecture document</li>
+              <li class="unavailable"><i class="fa-solid fa-circle-xmark"></i> Core database schema outline</li>
+            </ul>
+            <a href="#booking-anchor" class="btn btn-secondary plan-btn" onclick="setPlanDetails('Discovery Call', '15-min', 'Google-Meet')">Select Plan</a>
+          </div>
+
+          <!-- Plan 2 (Popular) -->
+          <div class="plan-card popular">
+            <div class="plan-badge">Best Choice</div>
+            <div class="plan-name">Project Scope Sync</div>
+            <div class="plan-price">Standard<span>/ 30 Mins</span></div>
+            <div class="plan-desc">A standard discussion to break down features, user journeys, and timelines.</div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-circle-check"></i> Itemized feature breakdown</li>
+              <li><i class="fa-solid fa-circle-check"></i> Detailed timeline estimates</li>
+              <li><i class="fa-solid fa-circle-check"></i> Zoom Video Call invitation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Shared requirement scoping doc</li>
+              <li class="unavailable"><i class="fa-solid fa-circle-xmark"></i> Core database schema outline</li>
+            </ul>
+            <a href="#booking-anchor" class="btn btn-primary plan-btn" onclick="setPlanDetails('Project Scope Sync', '30-min', 'Zoom')">Select Plan</a>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="plan-card">
+            <div class="plan-name">Architecture Deep-Dive</div>
+            <div class="plan-price">Custom<span>/ 60 Mins</span></div>
+            <div class="plan-desc">A deep-dive technical sync to map databases, microservices, and deployments.</div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-circle-check"></i> Database schema planning</li>
+              <li><i class="fa-solid fa-circle-check"></i> Microservice architecture map</li>
+              <li><i class="fa-solid fa-circle-check"></i> Detailed server / cloud layout</li>
+              <li><i class="fa-solid fa-circle-check"></i> Dedicated consultancy summary</li>
+              <li><i class="fa-solid fa-circle-check"></i> Flexible Meet / Video call link</li>
+            </ul>
+            <a href="#booking-anchor" class="btn btn-secondary plan-btn" onclick="setPlanDetails('Architecture Deep-Dive', '60-min', 'Google-Meet')">Select Plan</a>
+          </div>
+        </div>
+
+        <!-- Booking Request Form Anchor -->
+        <div id="booking-anchor" style="padding-top: 40px;">
+          <div class="glass-card schedule-form-card" style="max-width: 800px; margin: 0 auto;">
+            <form class="meeting-form" action="https://formspree.io/f/xykazqer" method="POST">
+              <input type="hidden" name="_subject" value="New Meeting Request from Portfolio V4!">
+              
+              <div class="schedule-form-grid">
+                <div class="form-group">
+                  <label for="meet-name">Your Name</label>
+                  <input type="text" id="meet-name" name="name" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="meet-email">Email Address</label>
+                  <input type="email" id="meet-email" name="_replyto" class="form-control" placeholder="johndoe@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="meet-date">Preferred Date</label>
+                  <input type="date" id="meet-date" name="preferred_date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="meet-time">Preferred Time</label>
+                  <input type="time" id="meet-time" name="preferred_time" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="meet-timezone">Your Timezone</label>
+                  <select id="meet-timezone" name="timezone" class="form-control" required>
+                    <option value="IST" selected>India Standard Time (IST - UTC+5:30)</option>
+                    <option value="EST">Eastern Standard Time (EST - UTC-5)</option>
+                    <option value="GMT">Greenwich Mean Time (GMT - UTC+0)</option>
+                    <option value="CET">Central European Time (CET - UTC+1)</option>
+                    <option value="AEST">Australian Eastern Standard Time (AEST - UTC+10)</option>
+                    <option value="Other">Other / Remote (Specify in details)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="meet-duration">Meeting Duration</label>
+                  <select id="meet-duration" name="duration" class="form-control" required>
+                    <option value="15-min">15 Minutes (Quick Sync)</option>
+                    <option value="30-min" selected>30 Minutes (Standard Discussion)</option>
+                    <option value="60-min">60 Minutes (Deep Dive / Tech Sync)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="meet-platform">Preferred Platform</label>
+                  <select id="meet-platform" name="platform" class="form-control" required>
+                    <option value="Google-Meet" selected>Google Meet</option>
+                    <option value="Zoom">Zoom Video Call</option>
+                    <option value="Phone">Direct Phone Call</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="meet-topic">Selected Consultation Plan</label>
+                  <input type="text" id="meet-topic" name="topic" class="form-control" placeholder="Project Discussion" value="Project Scope Sync" required>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-top: 20px;">
+                <label for="meet-details">Additional Details / Project Scope</label>
+                <textarea id="meet-details" name="details" class="form-control" placeholder="Share a brief overview of your product, timelines, or technologies..." style="min-height: 100px;"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" style="margin-top: 24px; width: 100%;">
+                Send Booking Request <i class="fa-solid fa-calendar-check"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tagline">Start a Conversation</span>
+            <h2 class="section-title">Get In Touch</h2>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Info Panel -->
+            <div class="contact-info-panel">
+              <h3>Let's collaborate on your next digital product.</h3>
+              <p>
+                Whether you have an idea for a cross-platform mobile app, need assistance scaling a backend system, or just
+                want to chat about tech stack design—my inbox is always open.
+              </p>
+
+              <ul class="contact-details-list">
+                <li class="contact-item">
+                  <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="contact-item-text">
+                    <span>Email Address</span>
+                    <a href="mailto:kchavda18@gmail.com">kchavda18@gmail.com</a>
+                  </div>
+                </li>
+                <li class="contact-item">
+                  <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="contact-item-text">
+                    <span>Phone Number</span>
+                    <a href="tel:+917405424330">+91 7405424330</a>
+                  </div>
+                </li>
+                <li class="contact-item">
+                  <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="contact-item-text">
+                    <span>Current Location</span>
+                    <p>Rajkot, Gujarat, India</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="social-links">
+                <a href="https://linkedin.com/in/kailash-chavda" target="_blank" class="social-btn" aria-label="LinkedIn"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/kailashchavda" target="_blank" class="social-btn" aria-label="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="mailto:kchavda18@gmail.com" class="social-btn" aria-label="Email"><i
+                    class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="glass-card">
+              <form class="contact-form" action="https://formspree.io/f/xykazqer" method="POST">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="_replyto" class="form-control" placeholder="johndoe@example.com"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Project Discussion"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" class="form-control"
+                    placeholder="Tell me about your product details..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn">Send Message <i
+                    class="fa-solid fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        iDeveloper<span>✦</span>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#expertise">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <p class="copyright">
+        &copy; 2026 Kailash Chavda. All Rights Reserved. Engineered with premium Custom Dashboard V4 layout.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- PREMIUM INTERACTIONS SCRIPT -->
+  <script>
+    // Helper to auto-fill form selection when clicking pricing plan
+    function setPlanDetails(planName, duration, platform) {
+      document.getElementById('meet-topic').value = planName;
+      document.getElementById('meet-duration').value = duration;
+      document.getElementById('meet-platform').value = platform;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // 1. BACK TO TOP SCROLL ACTION
+      const backToTop = document.getElementById('back-to-top');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) {
+          backToTop.classList.add('active');
+        } else {
+          backToTop.classList.remove('active');
+        }
+      });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // 2. MOBILE NAVBAR TOGGLE (Collapsible Sidebar Drawer)
+      const navToggle = document.getElementById('nav-toggle');
+      const sidebar = document.getElementById('app-sidebar');
+
+      navToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        const icon = navToggle.querySelector('i');
+        if (sidebar.classList.contains('active')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-xmark');
+        } else {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      });
+
+      // Close mobile sidebar on clicking any menu item
+      const menuLinks = sidebar.querySelectorAll('.menu-item');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          sidebar.classList.remove('active');
+          navToggle.querySelector('i').classList.remove('fa-xmark');
+          navToggle.querySelector('i').classList.add('fa-bars');
+          
+          // Manage active sidebar class
+          menuLinks.forEach(item => item.classList.remove('active'));
+          link.classList.add('active');
+        });
+      });
+
+      // 3. PROJECT GRID FILTERING LOGIC
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+
+            if (filterValue === 'all' || filterValue === category) {
+              card.classList.remove('hide');
+              setTimeout(() => {
+                card.classList.add('show');
+              }, 50);
+            } else {
+              card.classList.remove('show');
+              card.classList.add('hide');
+            }
+          });
+        });
+      });
+
+      // 4. ACTIVE LINK STATE HIGHLIGHTING ON SCROLL
+      const sections = document.querySelectorAll('section');
+      const navItems = sidebar.querySelectorAll('.menu-item');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= (sectionTop - 150)) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href').slice(1) === current) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      // 5. THEME SWITCHER LOGIC
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+      const currentTheme = localStorage.getItem('theme-v4');
+      const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+
+      const applyTheme = (isLight) => {
+        if (isLight) {
+          document.body.classList.add('light-theme');
+          themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i> Switch Theme';
+          themeToggleMobile.querySelector('i').className = 'fa-solid fa-sun';
+          localStorage.setItem('theme-v4', 'light');
+        } else {
+          document.body.classList.remove('light-theme');
+          themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i> Switch Theme';
+          themeToggleMobile.querySelector('i').className = 'fa-solid fa-moon';
+          localStorage.setItem('theme-v4', 'dark');
+        }
+      };
+
+      if (currentTheme === 'light' || (!currentTheme && systemPrefersLight)) {
+        applyTheme(true);
+      }
+
+      themeToggle.addEventListener('click', () => {
+        applyTheme(!document.body.classList.contains('light-theme'));
+      });
+      
+      themeToggleMobile.addEventListener('click', () => {
+        applyTheme(!document.body.classList.contains('light-theme'));
+      });
+
+      // 6. SCROLL REVEAL EFFECT WITH DIAL LOADER ANIMATIONS
+      const animateDials = (container) => {
+        const loaders = container.querySelectorAll('.circle-loader');
+        loaders.forEach(loader => {
+          const circle = loader.querySelector('.circle');
+          const value = loader.getAttribute('data-percentage');
+          if (circle && value) {
+            circle.style.strokeDasharray = `${value}, 100`;
+          }
+        });
+      };
+
+      const revealElements = document.querySelectorAll('.hero-cleaner-card, .metric-card, .glass-card, .section-header, .expertise-box, .plan-card');
+      revealElements.forEach(el => el.classList.add('reveal-element'));
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            // If the element has progress loaders, animate them!
+            if (entry.target.querySelector('.circle-loader')) {
+              animateDials(entry.target);
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -20px 0px'
+      });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+    });
+  </script>
+</body>
+
+</html>
