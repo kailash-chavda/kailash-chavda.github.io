@@ -1342,10 +1342,18 @@ header.scrolled {
   font-size: 18px;
 }
 
+.contact-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .contact-item-text span {
   font-size: 13px;
   color: var(--text-muted);
   display: block;
+  line-height: 1.2;
+  margin-bottom: 2px;
 }
 
 .contact-item-text a,
@@ -1353,6 +1361,9 @@ header.scrolled {
   font-size: 16px;
   font-weight: 600;
   color: var(--text-white);
+  line-height: 1.2;
+  display: block;
+  margin: 0;
 }
 
 .social-links {
