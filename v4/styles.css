@@ -1293,11 +1293,11 @@ body.light-theme .form-control {
   outline: none;
   border-color: var(--accent-emerald);
   box-shadow: 0 0 10px rgba(0, 205, 165, 0.1);
-  background: rgba(255, 255, 255, 0.01);
+  background-color: rgba(255, 255, 255, 0.01);
 }
 
 body.light-theme .form-control:focus {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0 0 10px rgba(4, 120, 87, 0.08);
 }
 
@@ -1346,6 +1346,8 @@ select.form-control {
 
 select.form-control:focus {
   background-image: var(--select-arrow-focus);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
 }
 
 select.form-control option {

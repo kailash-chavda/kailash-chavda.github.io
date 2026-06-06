@@ -1604,7 +1604,7 @@ body.light-theme .env-lang i.fa-apple { color: #0F172A; }
   outline: none;
   border-color: var(--accent-blue);
   box-shadow: 0 0 10px rgba(10, 92, 255, 0.1);
-  background: var(--bg-secondary);
+  background-color: var(--bg-secondary);
 }
 
 textarea.form-control {
@@ -1652,6 +1652,8 @@ select.form-control {
 
 select.form-control:focus {
   background-image: var(--select-arrow-focus);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
 }
 
 select.form-control option {
