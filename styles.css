@@ -1020,6 +1020,15 @@ body.light-theme .env-lang i.fa-apple { color: #0F172A; }
   font-size: 12px;
 }
 
+@keyframes marqueeLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* --- ABOUT ME SECTION --- */
 .about-grid {
   display: grid;
