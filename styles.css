@@ -681,13 +681,15 @@ body.light-theme .status-indicator-dot {
   text-align: center;
 }
 
-.env-lang i.fa-flutter { color: #0DFFC9; }
+.env-lang i.fa-flutter,
+.env-lang svg.flutter-icon { color: #0DFFC9; }
 .env-lang i.fa-android { color: #0A5CFF; }
 .env-lang i.fa-apple { color: var(--text-white); }
 .env-lang i.fa-laravel { color: #FF2D20; }
 .env-lang i.fa-node-js { color: #83B404; }
 
-body.light-theme .env-lang i.fa-flutter { color: #008767; }
+body.light-theme .env-lang i.fa-flutter,
+body.light-theme .env-lang svg.flutter-icon { color: #008767; }
 body.light-theme .env-lang i.fa-android { color: #0050E6; }
 body.light-theme .env-lang i.fa-apple { color: #0F172A; }
 
@@ -952,7 +954,8 @@ body.light-theme .env-lang i.fa-apple { color: #0F172A; }
   text-align: center;
 }
 
-.mock-phone-screen i {
+.mock-phone-screen i,
+.mock-phone-screen svg.flutter-icon {
   font-size: 32px;
   color: var(--accent-blue);
   margin-bottom: 12px;

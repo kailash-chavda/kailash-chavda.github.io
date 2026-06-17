@@ -775,7 +775,8 @@ header.scrolled {
   text-align: center;
 }
 
-.mock-phone-screen i {
+.mock-phone-screen i,
+.mock-phone-screen svg.flutter-icon {
   font-size: 32px;
   color: var(--accent-blue);
   margin-bottom: 12px;
