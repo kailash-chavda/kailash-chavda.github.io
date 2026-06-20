@@ -1468,8 +1468,12 @@ textarea.form-control {
 
 .schedule-form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 20px;
+}
+
+.schedule-form-grid > * {
+  min-width: 0;
 }
 
 select.form-control {
@@ -1481,6 +1485,9 @@ select.form-control {
   background-position: right 14px center;
   padding-right: 40px;
   cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 select.form-control:focus {
@@ -1646,7 +1653,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .schedule-form-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 15px;
   }
   .footer-nav {
