@@ -818,7 +818,7 @@
         </div>
 
         <!-- ✦ APP 16: Pahadi Phere Matrimonial -->
-        <div class="glass-card project-card show" data-category="mobile">
+        <div class="glass-card project-card show" data-category="mobile web">
           <div class="project-meta">
             <span class="project-category">Native App</span>
             <div class="project-links">
@@ -1372,7 +1372,7 @@
           projectCards.forEach(card => {
             const category = card.getAttribute('data-category');
 
-            if (filterValue === 'all' || filterValue === category) {
+            if (filterValue === 'all' || (category && category.split(' ').includes(filterValue))) {
               card.classList.remove('hide');
               setTimeout(() => {
                 card.classList.add('show');
