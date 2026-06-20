@@ -1044,7 +1044,7 @@
       </div>
 
       <!-- Collaboration Grid (Hire Me Options + Consultation Info) -->
-      <div class="collab-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 50px; align-items: stretch;">
+      <div class="collab-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 50px; align-items: stretch;">
         
         <!-- Column 1: Ways to Hire Me -->
         <div class="glass-card hire-info-card" style="padding: 40px; border-radius: 16px; background: var(--bg-glass); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
@@ -1382,6 +1382,12 @@
               card.classList.add('hide');
             }
           });
+
+          // Maintain focus on projects section when filtering
+          const projectsSection = document.getElementById('projects');
+          if (projectsSection) {
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
+          }
         });
       });
 

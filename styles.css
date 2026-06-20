@@ -1267,6 +1267,7 @@ body.light-theme .env-lang i.fa-apple { color: #0F172A; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
+  min-height: 600px; /* Prevent container collapse and scroll jump on filtering */
 }
 
 .project-card {
@@ -1604,6 +1605,9 @@ body.light-theme .env-lang i.fa-apple { color: #0F172A; }
 }
 
 .form-control {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   background: var(--bg-input);
   border: 1px solid var(--glass-border);
   border-radius: 8px;
@@ -1784,6 +1788,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
   :root {
     --navbar-height: 70px;
   }
@@ -1862,6 +1869,11 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .hire-info-card,
+  .consultation-info-card,
+  .schedule-form-card {
+    padding: 20px !important;
+  }
   .hero-title {
     font-size: 34px;
   }

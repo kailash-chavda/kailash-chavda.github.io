@@ -960,6 +960,7 @@ body.light-theme .theme-toggle:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
+  min-height: 600px; /* Prevent container collapse and scroll jump on filtering */
 }
 
 .project-card {
@@ -1285,6 +1286,9 @@ body.light-theme .theme-toggle:hover {
 }
 
 .form-control {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   background: var(--bg-input);
   border: 1px solid var(--glass-border);
   border-radius: 8px;
@@ -1527,6 +1531,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
   .hero-cleaner-card {
     grid-template-columns: 1fr;
     padding: 30px;
@@ -1550,6 +1557,11 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .hire-info-card,
+  .consultation-info-card,
+  .schedule-form-card {
+    padding: 20px !important;
+  }
   .hero-cleaner-card h1 {
     font-size: 28px;
   }
